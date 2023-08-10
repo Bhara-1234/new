@@ -1,0 +1,28 @@
+// Document Object
+const elementById = document.getElementById("myElement");
+
+// Element Object
+const newDiv = document.createElement("div");
+newDiv.textContent = "This is a new div!";
+document.body.appendChild(newDiv);
+
+// NodeList Object
+const paragraphs = document.querySelectorAll("p");
+paragraphs.forEach(function(paragraph) {
+    paragraph.style.color = "blue";
+});
+
+// Event Object
+const button = document.getElementById("myButton");
+button.addEventListener("click", function(event) {
+    console.log("Button clicked!");
+    console.log("Target element:", event.target);
+});
+
+// Attribute Object
+const image = document.querySelector("img");
+const imageUrl = image.getAttribute("src");
+console.log("Image URL:", imageUrl);
+
+// Window Object
+window.alert("Hello, world!");
